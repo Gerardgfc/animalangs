@@ -1,61 +1,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
-
-
-
-
-
-
-
-
-.menu-idiomas:hover ul,
-.sobre-nosotros:hover ul {
-    display: block;
-}
-
-.menu-idiomas ul li,
-.sobre-nosotros ul li {
-    margin-right: 20px;
-}
-
-.menu-idiomas ul li a,
-.sobre-nosotros ul li a {
-    display: block;
-    padding: 10px;
-    color: #000000;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.menu-idiomas ul li a:hover,
-.sobre-nosotros ul li a:hover {
-    background-color: #f0f0f0;
-}
-
-.menu-idiomas{
-    background-color: transparent;
-    box-shadow: none;
-
-
-}
-
-
-
-
-
+/* Materialize (comentado) */
+/* ... */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+    text-decoration: none;
+  }
+  
+  body {
     min-height: 100vh;
     background-image: linear-gradient(-45deg, #e3ddd9 50%, #36221c 50%);
-    font-family: 'Raleway', sans-serif;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+  }
+  
+  .interior {
+    max-width: 100%;
+    padding: 0 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    padding: 5px 20px 0;
+  }
+  
+  .logo img {
+    height: 80px;
+  }
+  
+  .logo img:hover {
+    transform: scale(1.1);
+  }
+  
+  .navegacion {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    z-index: 1000;
+  }
+  
+  .navegacion ul {
+    list-style: none;
+    padding: 0 10px;
+  }
+
+.navegacion ul li:hover{
+    transform: scale(1.1);
 }
+
+.navegacion ul li a{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+.navegacion ul li a:hover{
+    color: aqua;
+    transform: scale(1.0);
+
+}
+
+.navegacion ul li:hover .hijos{
+    display: block;
+}
+
+.navegacion .submenu .hijos{
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.navegacion .submenu .hijos li{
+    display: block;
+    overflow: hidden;
+    border-bottom: none;
+    
+}
+
+.navegacion .submenu .hijos li a{
+    display: block;
+}
+
+.hijos{
+    padding: 1px;
+}
+
+
+/* Asegurar que el selector de idioma esté superpuesto */
+.idioma-selector {
+    position: relative;
+    z-index: 10000;
+    background-color: #1f2c94;
+}
+  
+
+/* Estilos específicos para el selector de idioma */
+#selector-idioma {
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    z-index: 10000;
+}
+
+/* Asegurar que el mensaje de idioma esté visible */
+#mensaje-idioma {
+    display: block;
+    color: black;
+    margin-left: 10px;
+}
+
+
+
+
+
+
 
 .titulo {
     font-size: 40px;
@@ -89,6 +167,16 @@ body {
     height: 2px;
     background-color: #36221c;
 }
+
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+  }
+  
+  
+  
 
 /* Materialize */
 
