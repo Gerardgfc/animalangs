@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Animalang</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="interior">
+            <a href="../index.html" class="logo"><img src="../img/logo.png" alt=""></a>
+            <nav class="navegacion">
+                <ul>
+                    <li><a href="../index.html" id="inicio"></a></li>
+                    <li class="submenu">
+                        <a href="" id="idiomas"></a>
+                        <ul class="hijos">
+                            <li><a href="../pages/aleman.html" id="aleman"></a></li>
+                            <li><a href="../pages/chino.html" id="chino"></a></li>
+                            <li><a href="../pages/frances.html" id="frances"></a></li>
+                            <li><a href="../pages/ingles.html" id="ingles"></a></li>
+                            <li><a href="../pages/italiano.html" id="espanol"></a></li>
+                            <li><a href="../pages/portugues.html" id="portugues"></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" id="acerca_de"></a></li>
+                    <li><a href="" id="cursos_gratuitos"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="idioma-selector">
+            <select id="selector-idioma" onchange="cambiarIdioma()">
+              <option value="es">Español</option>
+              <option value="en">Inglés</option>
+            </select>
+            <p id="mensaje-idioma"></p>
+        </div>    
+    </header>
+    <main>
+        <div class="comentarios">
+            <h2>Hola</h2>
+            <div class="espacio">
+                <br>
+                <p><b>Animalangs</b> es una plataforma de aprendizaje de idiomas disponible en la web. En agosto de 2021, Animalangs tenía más de 50.000 estudiantes registrados. Nuestros cursos comprenden los idiomas inglés, francés, alemán, italiano, español, portugués, chino, ruso, holandés y latín. En 2022, ampliaremos nuestros cursos a japonés, árabe y coreano, que ya son idiomas bastante buscados.</p>
+                <br>
+                <p><b>ENSEÑANZA PERSONALIZADA CON PROFESORES 24/7</b></p>
+                <br>
+                <p>Cada persona aprende un idioma de forma diferente, y en Animalangs lo sabemos. Por ello, nuestro principal objetivo es ofrecer a todos nuestros alumnos acceso a clases particulares a través de la tecnología.</p>
+                <br>
+                <p><b>MÉTODO DIVERTIDO</b></p>
+                <br>
+                <p>Es muy difícil mantenerse motivado cuando se aprende en línea, por eso en Animalangs hemos creado un método de 5 palabras diarias y de repetición constante que interactúa todo el tiempo con el alumno. Nuestras clases tienen una duración máxima de 7-12 minutos en las que el alumno practica todo el tiempo. Nos enfocamos en la lectura, traducción, comprensión, habla y escritura, áreas todas que componen un idioma para que se aprenda y retenga en la mayor medida posible.</p>
+                <br>
+                <p><b>MÉTODO ECONÓMICO Y MUY EFICAZ</b></p>
+                <br>
+                <p>Hay más de 1.500 millones de personas en el mundo que aprenden un idioma y la mayoría lo hace para acceder a mejores oportunidades de trabajo.<br> Desafortunadamente, aprender un idioma es caro e inaccesible para la mayoría.
+                    En Animalangs, nuestros cursos cuestan un máximo de $ 12 por módulo o menos (dependiendo del país en el que viva). No hay tarifas ocultas y tendrás acceso a profesores altamente especializados que pueden darte consejos y crear una interacción única con el estudiante. Además, la enseñanza es intensiva, lo que significa que aprendes mucho más en Animalangs que en una escuela de idiomas donde pagarías una mensualidad de aprox. $ 100 o incluso más.<br>
+                    En Animalangs, creemos que se puede lograr una educación de calidad a un precio asequible que todos pueden pagar. Creemos que la educación de calidad debe ser accesible para todos y a un bajo costo.</p>
+                <p><b>NUESTRO MÉTODO</b></p>
+                <br>
+                <p>Nuestro método de enseñanza de 5 palabras diarias se basa en una metodología científicamente probada que demuestra que los estudiantes pueden retener las palabras y conceptos aprendidos al 100%. Como nuestros cursos son muy lúdicos y divertidos, la retención de estas palabras alcanza más del 80% por clase. A medida que se revisan estas palabras en lecciones posteriores, la retención puede alcanzar el 100%. Los ejercicios de traducción, lectura, expresión oral y escritura forman parte de la enseñanza.<br>
+                    Además, el profesor presentará las estructuras gramaticales a lo largo del curso de forma casi imperceptible. La gramática es parte del curso, pero no es una carga ni mera “memorización”, se explica a medida que el alumno aprende sus 5 palabras de una forma muy equilibrada y divertida.<br>
+                    En Animalangs, siempre nos esforzamos por mejorar. Es por eso que usamos los resultados de los estudiantes y sus evaluaciones para evolucionar y asegurarnos de que estamos brindando la mejor enseñanza de idiomas del mundo. Como los idiomas, nunca nos detenemos en el tiempo.</p>
+
+                <br>
+            </div>
+            
+        </div>
+        
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="scrips.js"></script>
+</body>
+</html>
