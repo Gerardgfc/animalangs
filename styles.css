@@ -1,154 +1,170 @@
+/* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
-/* Materialize (comentado) */
-/* ... */
-
+/* Base styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    
-  }
-  
-  body {
-    min-height: 100vh;
-    background-size: cover; 
-    background-position: center;
-    background-image: url(img/mapades.png)
-  }
-  
-  header {
-    position:fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-    background: linear-gradient(to right, #000000, #3533CD);
-  }
-  
-  .interior {
-    max-width: 100%;
-    padding: 0 10px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    padding: 5px 20px 0;
-  }
-  
-  .logo img {
-    height: 80px;
-  }
-  
-  .logo img:hover {
-    transform: scale(1.1);
-  }
-  
-  .navegacion {
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    z-index: 10;
-    border: none;
-  }
-  
-  .navegacion ul {
-    list-style: none;
-    padding: 0 10px;
-  }
-
-.navegacion ul li:hover{
-    transform: scale(1.1);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-.navegacion ul li a{
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: bold;
-    padding: 0 20px;
+body {
+  min-height: 100vh;
+  background-image: url(img/mapades.png);
+  background-size: cover;
+  background-position: center;
 }
 
-.navegacion ul li a:hover{
-    color: aqua;
-    transform: scale(1.0);
-
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background: linear-gradient(to right, #000000, #3533CD);
 }
 
-.navegacion ul li:hover .hijos{
-    display: block;
+.interior {
+  max-width: 100%;
+  padding: 0 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navegacion .submenu .hijos{
-    display: none;
-    position: absolute;
-    width: 100%;
+.logo {
+  padding: 5px 20px 0;
 }
 
-.navegacion .submenu .hijos li{
-    display: block;
-    overflow: hidden;
-    border-bottom: none;
-    background-color: #14134F;
-    min-width: 115px;
+.logo img {
+  height: 80px;
+  transition: transform 0.3s ease;
 }
 
-.navegacion .submenu .hijos li a{
-    display: block;
+.logo img:hover {
+  transform: scale(1.1);
 }
 
-.hijos{
-    padding: 1px;
+/* Navigation */
+.navegacion {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  border: none;
 }
 
+.navegacion ul {
+  list-style: none;
+  padding: 0 10px;
+}
+
+.navegacion ul li:hover {
+  transform: scale(1.1);
+}
+
+.navegacion ul li a {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navegacion ul li a:hover {
+  color: aqua;
+  transform: scale(1.0);
+}
+
+.navegacion ul li:hover .hijos {
+  display: block;
+}
+
+.navegacion .submenu .hijos {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+.navegacion .submenu .hijos li {
+  display: block;
+  overflow: hidden;
+  border-bottom: none;
+  background-color: #14134F;
+  min-width: 115px;
+}
+
+.navegacion .submenu .hijos li a {
+  display: block;
+}
+
+.hijos {
+  padding: 1px;
+}
+
+/* Flags */
+.bandera-usa,
+.bandera-brasil,
+.bandera-espana {
+  width: 20px;
+  height: 15px;
+  display: inline-block;
+  background-size: cover;
+}
 
 .bandera-usa {
-    width: 20px; /* Ajusta el tamaño según sea necesario */
-    height: 15px; /* Ajusta el tamaño según sea necesario */
-    display: inline-block;
-    background-image: url('img/bandera-eeuu.png'); /* Cambia la ruta a la ubicación de tu imagen de la bandera de EE. UU. */
-    background-size: cover;
+  background-image: url('img/bandera-eeuu.png');
 }
 
 .bandera-brasil {
-    width: 20px; /* Ajusta el tamaño según sea necesario */
-    height: 15px; /* Ajusta el tamaño según sea necesario */
-    display: inline-block;
-    background-image: url('img/bandera_br.png'); /* Cambia la ruta a la ubicación de tu imagen de la bandera de Brasil */
-    background-size: cover;
+  background-image: url('img/bandera_br.png');
 }
-
 
 .bandera-espana {
-    width: 20px; /* Ajusta el tamaño según sea necesario */
-    height: 15px; /* Ajusta el tamaño según sea necesario */
-    display: inline-block;
-    background-image: url('img/banderaspana.png'); /* Cambia la ruta a la ubicación de tu imagen de la bandera de Brasil */
-    background-size: cover;
+  background-image: url('img/banderaspana.png');
 }
 
-
+/* Titulos */
 .titulo {
-    font-size: 40px;
-    font-family: 'Dancing Script', cursive;
-    margin-bottom: 40px;
-    color: #fff;
+  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 40px;
+  color: #fff;
 }
 
 .subtitulo {
-    margin: 0;
-    color: #000;
-    font-size: 50px;
-    font-weight: 500;
-    text-transform: uppercase;
+  margin: 0;
+  color: #000;
+  font-size: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
-.carousel a {
+/* Carousel */
+.carousel {
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .carousel .carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 50px;
+    height: 50px;
+    position: relative;
+  }
+
+  .carousel a{
     color: #fff;
     margin: 7px 0 0 0;
     font-size: 30px;
@@ -158,45 +174,15 @@
     background-color: #1f2c94;
     border-radius: 10px;
     border: #000;
-}
+  }
 
-.linea-division {
+  .linea-division {
     width: 80%;
     height: 2px;
     background-color: #36221c;
 }
-
-.col{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 80px;
-  }
   
-  
-  
-
-/* Materialize */
-
-.carousel {
-    min-height: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.carousel .carousel-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-    width: 50px;
-    height: 50px;
-    position: relative;
-}
-
-.carousel .carousel-item img {
+  .carousel .carousel-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -205,150 +191,147 @@
     left: 0;
     z-index: -1;
     border-radius: 15px;
-}
-
-.carousel .indicators .indicator-item {
+  }
+  
+  .carousel .indicators .indicator-item {
     border-radius: 0;
     transform: rotate(45deg);
     margin: 0 15px;
     background: #36221c;
-}
-
-.carousel-item.active img {
+  }
+  
+  .carousel-item.active img {
     transform: scale(2);
     opacity: 100;
     z-index: -2;
-}
-
-.carousel-item.active img:hover {
+  }
+  
+  .carousel-item.active img:hover {
     filter: brightness(70%);
-}
-
-.carousel-item.active {
+  }
+  
+  .carousel-item.active {
     transform: scale(1.2);
     z-index: 1;
     opacity: 0.5;
-}
-
-.carousel-item {
+  }
+  
+  .carousel-item {
     transition: transform 0.5s ease;
     z-index: 0;
-}
-
-.carousel .carousel-item img {
+  }
+  
+  .carousel .carousel-item img {
     border-radius: 15px;
-}
-
-.carousel-item:not(.active) img {
+  }
+  
+  .carousel-item:not(.active) img {
     transform: scale(0.8);
     opacity: 1;
     transition: transform 0.5s ease, opacity 0.5s ease;
-}
-
-.carousel-item {
+  }
+  
+  .carousel-item {
     transition: transform 0.5s ease;
     z-index: 0;
-}
-
-.carousel .carousel-item img {
+  }
+  
+  .carousel .carousel-item img {
     border-radius: 15px;
-}
-
-.carousel-item:not(.active) h2,
-.carousel-item:not(.active) .linea-division,
-.carousel-item:not(.active) a {
+  }
+  
+  .carousel-item:not(.active) h2,
+  .carousel-item:not(.active) .linea-division,
+  .carousel-item:not(.active) a {
     opacity: 0;
     transition: opacity 0.5s ease;
-}
-
-
-.comentarios , .contenidos2{
+  }
+  
+  .comentarios, .contenidos2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 120px;
     position: relative;
     color: #fff;
-}
-
-.comentarios h2{
+  }
+  
+  .comentarios h2 {
     display: block;
-    text-align:center;
+    text-align: center;
     font-family: 'Dancing Script', cursive;
-}
-
-.espacio{
+  }
+  
+  .espacio {
     background-color: rgba(153, 154, 155, 0.555);
     padding: 12px 12px;
-}
-
-.espacio b {
+  }
+  
+  .espacio b {
     font-size: 19px;
-}
-
-.espacio .sub {
-   display: block;
-   text-align:center;
-   margin-top: 20px;
-   margin-bottom: 20px;
-
-}
-
-
-.titulo-principal{
+  }
+  
+  .espacio .sub {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .titulo-principal {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     margin-top: 100px;
-}
-
-.contenidos2 {
+  }
+  
+  .contenidos2 {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     padding: 2px;
-}
-
-.tarjeta {
+  }
+  
+  .tarjeta {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
     width: 300px;
     height: 325px;
-}
-
-.img-vid img {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+  }
+  
+  .img-vid img {
     width: 100%;
     height: auto;
     display: block;
-}
-
-.contenidos2 .contenido p,h2{
+  }
+  
+  .contenidos2 .contenido p, h2 {
     color: #000000;
-    
-}
-
-.comentarios h2,p{
+  }
+  
+  .comentarios h2, p {
     color: #ffffff;
-}
-
-.contenido h2 {
+  }
+  
+  .contenido h2 {
     margin-top: 0;
-    font-size: 18px; /* Tamaño de fuente reducido */
-}
-
-.contenido p {
+    font-size: 18px;
+  }
+  
+  .contenido p {
     margin-bottom: 10px;
-    font-size: 14px; /* Tamaño de fuente reducido */
-}
-
-.contenido a {
-    display: inline-flex; /* Cambiado a flexbox */
-    align-items: center; /* Centra verticalmente el contenido */
-    justify-content: center; /* Centra horizontalmente el contenido */
+    font-size: 14px; 
+  }
+  
+  .contenido a {
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
     background-color: #007bff;
     color: #fff;
     padding: 8px 16px;
@@ -356,40 +339,33 @@
     border-radius: 4px;
     transition: background-color 0.3s;
     font-size: 14px;
-}
-
-
-.contenido a:hover {
+  }
+  
+  .contenido a:hover {
     background-color: #0056b3;
-}
-
-
-
-.tarjeta {
-    /* Mantén tus estilos existentes para la tarjeta */
+  }
+  
+  .tarjeta {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
     width: 300px;
     height: 375px;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 1); /* Añadir sombra */
-}
-
-
-/* Aplica estilos de centrado solo al contenido */
-.contenido {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+  }
+  
+ 
+  .contenido {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra verticalmente el contenido */
-    align-items: center; /* Centra horizontalmente el contenido */
-
-    
-}
-
-/* Aplica estilos de centrado solo al botón */
-.contenido a {
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  
+  .contenido a {
     display: inline-block;
     background-color: #007bff;
     color: #fff;
@@ -398,80 +374,86 @@
     border-radius: 4px;
     transition: background-color 0.3s;
     font-size: 14px;
-}
-
-.contenidos2 {
+  }
+  
+  .contenidos2 {
     margin-top: -10px;
     margin-bottom: 1px;
-}
-
-.titulo-principal{
-    font-family: 'Dancing Script', cursive;
-}
-
-
-.contenidos3 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.tarjeta3 {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  width: 300px;
-  height: 375px;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 1);
-}
-
-.tarjeta3 {
-    margin: 0 150px; /* Ajusta el valor según sea necesario */
   }
-
-.img-vid3 img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.contenido3 {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.contenido3 h2 {
-  margin-top: 0;
-  font-size: 18px;
-}
-
-.contenido3 p {
-  margin-bottom: 10px;
-  font-size: 14px;
-  color: #000000;
-}
-
-.contenido3 a {
-  display: inline-block;
-  background-color: #007bff;
-  color: #fff;
-  padding: 8px 16px;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-  font-size: 14px;
-}
-
-.contenido3 a:hover {
-  background-color: #0056b3;
-}
-
-footer{
+  
+  .titulo-principal {
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .contenidos3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tarjeta3 {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    height: 375px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+  }
+  
+  .tarjeta3 {
+    margin: 0 150px;
+  }
+  
+  .tarjeta:hover,
+  .tarjeta3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out; 
+  }
+  
+  .img-vid3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .contenido3 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contenido3 h2 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  .contenido3 p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  .contenido3 a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-size: 14px;
+  }
+  
+  .contenido3 a:hover {
+    background-color: #0056b3;
+  }
+  
+  footer {
     background: linear-gradient(to right, #000000, #3533CD);
     padding-top: 50px;
-    
-}
+  }
+  
