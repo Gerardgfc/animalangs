@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    
   }
   
   body {
@@ -19,11 +20,10 @@
   }
   
   header {
-    position: fixed;
+    position:fixed;
     top: 0;
     width: 100%;
-    height: 80px;
-    z-index: 100;
+    z-index: 2;
     background: linear-gradient(to right, #000000, #3533CD);
   }
   
@@ -52,7 +52,7 @@
     background-color: transparent;
     display: flex;
     align-items: center;
-    z-index: 1000;
+    z-index: 10;
     border: none;
   }
   
@@ -107,39 +107,30 @@
 }
 
 
-/* Asegurar que el selector de idioma esté superpuesto */
-.idioma-selector {
-    position: relative;
-    z-index: 10000;
+.bandera-usa {
+    width: 20px; /* Ajusta el tamaño según sea necesario */
+    height: 15px; /* Ajusta el tamaño según sea necesario */
+    display: inline-block;
+    background-image: url('img/bandera-eeuu.png'); /* Cambia la ruta a la ubicación de tu imagen de la bandera de EE. UU. */
+    background-size: cover;
 }
 
-.idioma-selector p {
-    display: block;
-  }
-  
-
-/* Estilos específicos para el selector de idioma */
-#selector-idioma {
-    color: black;
-    background-color: transparent;
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 5px;
-    margin-right: 10px;
-    z-index: 10000;
-}
-
-/* Asegurar que el mensaje de idioma esté visible */
-#mensaje-idioma {
-    display: block;
-    color: black;
-    margin-left: 10px;
+.bandera-brasil {
+    width: 20px; /* Ajusta el tamaño según sea necesario */
+    height: 15px; /* Ajusta el tamaño según sea necesario */
+    display: inline-block;
+    background-image: url('img/bandera_br.png'); /* Cambia la ruta a la ubicación de tu imagen de la bandera de Brasil */
+    background-size: cover;
 }
 
 
-
-
-
+.bandera-espana {
+    width: 20px; /* Ajusta el tamaño según sea necesario */
+    height: 15px; /* Ajusta el tamaño según sea necesario */
+    display: inline-block;
+    background-image: url('img/banderaspana.png'); /* Cambia la ruta a la ubicación de tu imagen de la bandera de Brasil */
+    background-size: cover;
+}
 
 
 .titulo {
@@ -271,7 +262,7 @@
 }
 
 
-.comentarios{
+.comentarios , .contenidos2{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -280,8 +271,140 @@
     color: #fff;
 }
 
+.comentarios h2{
+    display: block;
+    text-align:center;
+    font-family: 'Dancing Script', cursive;
+}
 
 .espacio{
     background-color: rgba(153, 154, 155, 0.555);
+    padding: 12px 12px;
 }
 
+.espacio b {
+    font-size: 19px;
+}
+
+.espacio .sub {
+   display: block;
+   text-align:center;
+   margin-top: 20px;
+   margin-bottom: 20px;
+
+}
+
+
+.titulo-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.contenidos2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2px;
+}
+
+.tarjeta {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    height: 325px;
+}
+
+.img-vid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contenidos2 .contenido p,h2{
+    color: #000000;
+    
+}
+
+.comentarios h2,p{
+    color: #ffffff;
+}
+
+.contenido h2 {
+    margin-top: 0;
+    font-size: 18px; /* Tamaño de fuente reducido */
+}
+
+.contenido p {
+    margin-bottom: 10px;
+    font-size: 14px; /* Tamaño de fuente reducido */
+}
+
+.contenido a {
+    display: inline-flex; /* Cambiado a flexbox */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+
+.contenido a:hover {
+    background-color: #0056b3;
+}
+
+
+
+.tarjeta {
+    /* Mantén tus estilos existentes para la tarjeta */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    height: 375px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1); /* Añadir sombra */
+}
+
+
+/* Aplica estilos de centrado solo al contenido */
+.contenido {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+
+    
+}
+
+/* Aplica estilos de centrado solo al botón */
+.contenido a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+.contenidos2 {
+    margin-top: -10px;
+    margin-bottom: 1px;
+}
+
+.titulo-principal{
+    font-family: 'Dancing Script', cursive;
+}

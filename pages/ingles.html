@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animalang Inglés</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="interior">
+            <a href="../index.html" class="logo"><img src="../img/logo.png" alt=""></a>
+            <nav class="navegacion">
+                <ul>
+                    <li><a href="../index.html" id="inicio"></a></li>
+                    <li class="submenu">
+                        <a href="" id="idiomas"></a>
+                        <ul class="hijos">
+                            <li><a href="aleman.html" id="aleman"></a></li>
+                            <li><a href="chino.html" id="chino"></a></li>
+                            <li><a href="frances.html" id="frances"></a></li>
+                            <li><a href="ingles.html" id="ingles"></a></li>
+                            <li><a href="italiano.html" id="italiano"></a></li>
+                            <li><a href="portugues.html" id="portugues"></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sobre.html" id="acerca_de"></a></li>
+                    <li><a href="" id="cursos_gratuitos"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="idioma-selector">
+            <select id="selector-idioma" onchange="cambiarIdioma()">
+              <option value="es">Español</option>
+              <option value="en">Inglés</option>
+            </select>
+            <p id="mensaje-idioma"></p>
+        </div>    
+    </header>
+    <main>
+        
+        <section class="contenidos2">
+            <h1 class="titulo-principal">Inglés</h1>
+            
+            <div class="tarjeta">
+                <div class="img-vid">
+                    <img src="https://img-b.udemycdn.com/course/240x135/3165260_8b42_4.jpg" alt="">
+                </div>
+                <div class="contenido">
+                    <h2>Inglés en 5 palabras - Curso 1 | De cero a iniciante (A1)</h2>
+                    <p>Aprende el inglés básico A1 en 4 semanas de forma práctica, objetiva y divertida</p>
+                    <a id="ingles_link" href="https://www.udemy.com/course/ingles-5-palavras-curso-a1-espanol-iniciantes/?referralCode=FF3301CB152D3A5ADCC9&couponCode=GENAISALE24">Ir al curso</a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="scrips.js"></script>
+</body>
+</html>

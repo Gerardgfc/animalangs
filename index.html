@@ -13,68 +13,78 @@
             <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
             <nav class="navegacion">
                 <ul>
-                    <li><a href="index.html" id="inicio"></a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li class="submenu">
-                        <a href="" id="idiomas"></a>
+                        <a href="">Idiomas</a>
                         <ul class="hijos">
-                            <li><a href="" id="aleman"></a></li>
-                            <li><a href="" id="chino"></a></li>
-                            <li><a href="" id="espanol"></a></li>
-                            <li><a href="" id="frances"></a></li>
-                            <li><a href="" id="ingles"></a></li>
-                            <li><a href="" id="portugues"></a></li>
+                            <li><a href="pages/aleman.html" >Alemán</a></li>
+                            <li><a href="pages/chino.html" >Chino</a></li>
+                            <li><a href="pages/frances.html">Frances</a></li>
+                            <li><a href="pages/ingles.html">Ingles</a></li>
+                            <li><a href="pages/italiano.html">Italiano</a></li>
+                            <li><a href="pages/portugues.html">Portugués</a></li>
                         </ul>
                     </li>
-                    <li><a href="pages/sobre.html" id="acerca_de"></a></li>
-                    <li><a href="" id="cursos_gratuitos"></a></li>
+                    <li><a href="pages/sobre.html">Acerca de</a></li>
+                    <li><a href="pages/gratuitos.html">Cursos Gratuitos</a></li>
+                    <li class="submenu">
+                        <a href="">
+                            <span class="bandera-espana"></span> Es
+                        </a>
+                        <ul class="hijos">
+                            <li>
+                                <a href="En/index.html">
+                                    <span class="bandera-usa"></span> En
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="bandera-brasil"></span> Pt
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
                 </ul>
             </nav>
-        </div>
-        <div class="idioma-selector">
-            <select id="selector-idioma" onchange="cambiarIdioma()">
-              <option value="es">Español</option>
-              <option value="en">Inglés</option>
-            </select>
-            <p id="mensaje-idioma"></p>
-        </div>
-          
-          
+        </div> 
     </header>
+
     <main>
         <div class="container">
             <div class="row">
                 <div class="col s12">
-                    <h1 class="center-align titulo" id="que_idioma"></h1>
+                    <h1 class="center-align titulo">¿Qué idioma aprendemos hoy?</h1>
                     <div class="carousel center-align">
                         <div class="carousel-item">
-                            <h2 class="subtitulo" id="frances_titulo"></h2>
+                            <h2 class="subtitulo">Francés</h2>
                             <div class="linea-division"></div>
                             <img src="img/menu/FRANCIA.png">
-                            <a href="pages/frances.html" id="frances_link"></a>
+                            <a href="pages/frances.html">Aprender ahora</a>
                         </div>  
                         <div class="carousel-item">
-                            <h2 class="subtitulo" id="aleman_titulo"></h2>
+                            <h2 class="subtitulo">Alemán</h2>
                             <div class="linea-division"></div>
                             <img src="img/menu/GERMANY.png" alt="Alemán">
-                            <a href="pages/aleman.html" class="boton-carousel" id="aleman_link"></a>
+                            <a href="pages/aleman.html" class="boton-carousel">Aprender ahora</a>
                         </div>
                         <div class="carousel-item">
-                            <h2 class="subtitulo" id="ingles_titulo"></h2>
+                            <h2 class="subtitulo">Inglés</h2>
                             <div class="linea-division"></div>
                             <img src="img/menu/ESTADOS-UNIDOS.png" alt="Inglés">
-                            <a href="pages/ingles.html" class="boton-carousel" id="ingles_link"></a>
+                            <a href="pages/ingles.html" class="boton-carousel">Aprender ahora</a>
                         </div>
                         <div class="carousel-item">
-                            <h2 class="subtitulo" id="italiano_titulo"></h2>
+                            <h2 class="subtitulo">Italiano</h2>
                             <div class="linea-division"></div>
                             <img src="img/menu/italiano.jpg" alt="Italiano">
-                            <a href="pages/italiano.html" class="boton-carousel" id="italiano_link"></a>
+                            <a href="pages/italiano.html" class="boton-carousel">Aprender ahora</a>
                         </div>
                         <div class="carousel-item">
-                            <h2 class="subtitulo" id="portugues_titulo"></h2>
+                            <h2 class="subtitulo">Portugués</h2>
                             <div class="linea-division"></div>
                             <img src="img/menu/brasil.jpg" alt="Portugués">
-                            <a href="pages/portugues.html" class="boton-carousel" id="portugues_link"></a>
+                            <a href="pages/portugues.html" class="boton-carousel">Aprender ahora</a>
                         </div>
                     </div>    
                 </div>
@@ -82,7 +92,7 @@
         </div>
     </main>
     <footer>
-        <p>Bases y condiciones</p>
+        
         
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
