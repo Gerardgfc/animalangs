@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
-/* Base styles */
+/* Base */
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +48,7 @@ header {
   transform: scale(1.1);
 }
 
-/* Navigation */
+/* Navigacion */
 .navegacion {
   background-color: transparent;
   display: flex;
@@ -107,7 +107,7 @@ header {
   padding: 1px;
 }
 
-/* Flags */
+/* Banderas */
 .bandera-usa,
 .bandera-brasil,
 .bandera-espana {
@@ -129,7 +129,96 @@ header {
   background-image: url('img/banderaspana.png');
 }
 
+/* Menu  Mov*/
+
+.menu-btn {
+  display: block; 
+  background-color: transparent; 
+  color: #fff; 
+  padding: 10px 15px;
+  border: 2px solid #312fbe; 
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease; 
+}
+
+.menu-btn:hover {
+  background-color: #312fbe; 
+}
+
+/* Ajustar el estilo del botón de menú en pantallas pequeñas */
+@media screen and (min-width: 769px) {
+  .menu-btn {
+    display: none; 
+  }
+}
+
+/* Estilos para el menú desplegable en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .navegacion ul {
+    display: none; 
+  }
+
+  .navegacion.active ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #3533CD; 
+    z-index: 10;
+  }
+
+  .navegacion.active ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+  }
+
+  .navegacion.active ul li a {
+    color: #fff;
+    font-size: 14px; 
+    display: block; 
+    text-align: center; 
+    padding: 10px 0; 
+    transition: color 0.3s ease; 
+  }
+
+  /* Estilo para los elementos del menú secundario (hijos) */
+  .hijos li {
+    padding: 10px 0; 
+  }
+
+  .hijos li a {
+    color: #8b1010; 
+    display: block; 
+    font-size: 20px; 
+    text-align: center; 
+    padding: 100px 200px; 
+    transition: color 0.3s ease; 
+  }
+
+  .hijos li a:hover {
+    color: #e1e1ec; 
+  }
+}
+
+
+
+
+
+
+
 /* Titulos */
+.col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
 .titulo {
   font-size: 40px;
   font-family: 'Dancing Script', cursive;
@@ -181,6 +270,8 @@ header {
     height: 2px;
     background-color: #36221c;
 }
+
+
   
   .carousel .carousel-item img {
     width: 100%;
