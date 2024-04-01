@@ -1,0 +1,26 @@
+.container{
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .carousel .carousel-item>img {
+    width: 150%;
+    height: 100%;
+}
+
+
+
+.carousel-item h2{
+    margin-left: 50%;
+  }
+
+  .carousel-item a{
+    margin-left: 50%;
+  }
+  
+  .carousel .indicators .indicator-item {
+    border-radius: 10px;
+    transform: rotate(45deg);
+    margin: 0 15px;
+    background: #1f2c94;
+  }

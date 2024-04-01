@@ -11,10 +11,7 @@
 }
 
 body {
-  min-height: 100vh;
-  background-image: url(img/mapades.png);
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(to right, #000000, #3533CD);
 }
 
 /* Header */
@@ -40,7 +37,7 @@ header {
 }
 
 .logo img {
-  height: 80px;
+  height: 100px;
   transition: transform 0.3s ease;
 }
 
@@ -227,11 +224,13 @@ header {
 }
 
 .subtitulo {
-  margin: 0;
+  margin-top: 0;
   color: #000;
   font-size: 50px;
   font-weight: 500;
   text-transform: uppercase;
+  text-decoration: underline;
+  
 }
 
 /* Carousel */
@@ -255,7 +254,8 @@ header {
 
   .carousel a{
     color: #fff;
-    margin: 7px 0 0 0;
+    padding: 5px;
+    margin-top: 200px;
     font-size: 30px;
     font-weight: 600;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
@@ -264,12 +264,6 @@ header {
     border-radius: 10px;
     border: #000;
   }
-
-  .linea-division {
-    width: 80%;
-    height: 2px;
-    background-color: #36221c;
-}
 
 
   
@@ -281,15 +275,10 @@ header {
     top: 0;
     left: 0;
     z-index: -1;
-    border-radius: 15px;
+    border-radius: 10px;
   }
   
-  .carousel .indicators .indicator-item {
-    border-radius: 0;
-    transform: rotate(45deg);
-    margin: 0 15px;
-    background: #36221c;
-  }
+
   
   .carousel-item.active img {
     transform: scale(2);
@@ -313,7 +302,7 @@ header {
   }
   
   .carousel .carousel-item img {
-    border-radius: 15px;
+    border-radius: 10px;
   }
   
   .carousel-item:not(.active) img {
@@ -328,7 +317,7 @@ header {
   }
   
   .carousel .carousel-item img {
-    border-radius: 15px;
+    border-radius: 10px;
   }
   
   .carousel-item:not(.active) h2,
@@ -356,6 +345,7 @@ header {
   .espacio {
     background-color: rgba(153, 154, 155, 0.555);
     padding: 12px 12px;
+    border-radius: 10px;
   }
   
   .espacio b {
@@ -388,7 +378,7 @@ header {
   .tarjeta {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
     width: 300px;
     height: 325px;
@@ -427,7 +417,7 @@ header {
     color: #fff;
     padding: 8px 16px;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 10px;
     transition: background-color 0.3s;
     font-size: 14px;
   }
@@ -439,7 +429,7 @@ header {
   .tarjeta {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
     width: 300px;
     height: 375px;
@@ -462,7 +452,7 @@ header {
     color: #fff;
     padding: 8px 16px;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 10px;
     transition: background-color 0.3s;
     font-size: 14px;
   }
@@ -485,7 +475,7 @@ header {
   .tarjeta3 {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
     width: 300px;
     height: 375px;
@@ -534,7 +524,7 @@ header {
     color: #fff;
     padding: 8px 16px;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 10px;
     transition: background-color 0.3s;
     font-size: 14px;
   }
@@ -548,3 +538,5 @@ header {
     padding-top: 50px;
   }
   
+
+
