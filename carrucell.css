@@ -24,3 +24,20 @@
     margin: 0 15px;
     background: #1f2c94;
   }
+
+  .iconos-redes{
+    display: flex;
+    justify-content: center;
+}
+
+.iconos-redes i{
+  color: white;
+  margin-left: 30px;
+  
+}
+
+
+.bases{
+  display: flex;
+  justify-content: flex-end;
+}

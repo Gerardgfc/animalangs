@@ -327,6 +327,8 @@ header {
     transition: opacity 0.5s ease;
   }
   
+
+
   .comentarios, .contenidos2 {
     display: flex;
     flex-direction: column;
@@ -346,6 +348,7 @@ header {
     background-color: rgba(153, 154, 155, 0.555);
     padding: 12px 12px;
     border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
   }
   
   .espacio b {
@@ -535,7 +538,9 @@ header {
   
   footer {
     background: linear-gradient(to right, #000000, #3533CD);
-    padding-top: 50px;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
   }
   
 
